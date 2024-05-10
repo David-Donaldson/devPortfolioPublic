@@ -1,0 +1,50 @@
+<div class="font-montserrat">
+  <app-navbar></app-navbar>
+
+  <ng-container *ngIf="currentPath != 'services'">
+    <app-home [theme]="theme"></app-home>
+    <app-about [theme]="theme"></app-about>
+    <app-skills [theme]="theme"></app-skills>
+    <app-projects [theme]="theme"></app-projects>
+    <app-contact [theme]="theme"></app-contact>
+  </ng-container>
+
+  <router-outlet *ngIf="currentPath == 'services'"></router-outlet>
+
+  <span
+    class="right-0 cursor-pointer fixed top-3/4 bg-transparent hidden xl:pr-2"
+    id="scrollToTop"
+    [attr.data-theme]="theme"
+  >
+    <a (click)="toTop()">
+      <svg
+        data-slot="icon"
+        class="w-6 xl:w-8"
+        fill="none"
+        stroke-width="1.5"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m4.5 15.75 7.5-7.5 7.5 7.5"
+        ></path>
+      </svg>
+    </a>
+  </span>
+
+  <app-footer [theme]="theme"></app-footer>
+</div>
+
+<ngx-spinner
+  size="large"
+  style="z-index: 10000"
+  color="#2a6b82"
+  [fullScreen]="true"
+  type="ball-atom"
+>
+  <p style="color: #fff">Please Wait...</p>
+</ngx-spinner>

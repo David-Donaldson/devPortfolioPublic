@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "animate.css/animate.min";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  opacity: 0;
+  width: 5px;
+  overflow-y: scroll;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a6b82;
+  border-radius: 10px;
+}
+
+.custom-btn {
+  @apply rounded-md py-2 px-4 text-nowrap uppercase text-xs font-bold cursor-pointer tracking-wider md:px-10;
+}
+.centered {
+  @apply lg:absolute lg:top-1/2 lg:m-0 lg:-translate-y-1/2;
+}
+.grecaptcha-badge {
+  visibility: hidden !important;
+}

@@ -1,0 +1,268 @@
+<div
+  [attr.data-theme]="theme"
+  class="section min-h-screen"
+  [ngClass]="{ 'custom-background': theme == 'main-theme' }"
+  id="Projects"
+>
+  <div class="flex-col pt-10 py-5 pb-10 m:p-14 lg:text-left lg:flex">
+    <h1
+      class="text-3xl font-bold text-center pb-10 pt-8 md:text-5xl xl:text-6xl"
+      [ngClass]="{ 'custom-text': theme == 'main-theme' }"
+    >
+      Projects
+    </h1>
+
+    <div class="grid gap-10">
+      <div
+        class="card relative grid lg:grid-cols-2 overflow-hidden card-compact m-auto items-center h-full w-[85%] rounded-[40px] border-[1px] border-t-0 shadow-[8px_8px_0px_0px] lg:p-8"
+        [ngClass]="{ 'custom-card-background': theme == 'main-theme' }"
+      >
+        <div class="hover:transform hover:pb-5 hover:scale-110 md:m-5">
+          <img
+            id="portairArea"
+            appMouseEvents
+            class="h-full w-full"
+            src="../../assets/portairlogistix.PNG"
+          />
+        </div>
+
+        <div class="card-body h-full pt-10 md:mx-5 justify-center">
+          <h1 class="card-title font-bold md:text-3xl xl:text-4xl">
+            Logistics Website
+          </h1>
+          <span
+            class="text-gray-200 text-[.7rem] leading md:text-[1rem] lg:text-base"
+          >
+            <p>
+              <span class="font-semibold">Tech:</span> Angular, Bootstrap, SCSS
+            </p>
+            <p>
+              <span class="font-semibold">Deployment:</span> Amazon S3,
+              Cloudfront
+            </p>
+            <p>
+              <span class="font-semibold">Integrations:</span> Google Maps,
+              Google Captcha
+            </p>
+          </span>
+          <span class="pt-5">
+            <p class="md:text-lg">
+              Static logistics website showcasing the services of a small
+              freight forwarding company in Jamaica.
+            </p>
+          </span>
+
+          <span class="pt-5 flex gap-3 items-end">
+            <div class="flex">
+              <img class="h-8 md:h-10" src="../../assets/github.svg" />
+            </div>
+
+            <div class="flex">
+              <a
+                href="https://portairlogistix.ezsolutionz.xyz/"
+                target="_blank"
+                class="flex items-center text-white"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="h-auto ml-1 !w-8 md:!w-10"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-5m-7 1L20 4m-5 0h5v5"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <div
+        class="card relative grid lg:grid-cols-2 overflow-hidden card-compact m-auto items-center h-full w-[85%] rounded-[40px] border-[1px] border-t-0 shadow-[7px_7px_0px_0px] lg:p-8"
+        [ngClass]="{ 'custom-card-background': theme == 'main-theme' }"
+      >
+        <div
+          class="hover:transform hover:pb-5 hover:scale-110 md:m-5 lg:order-2"
+        >
+          <img
+            id="troubleshootingArea"
+            appMouseEvents
+            class="h-full w-full"
+            src="../../assets/troubleshooting.PNG"
+          />
+        </div>
+
+        <div class="card-body h-full pt-10 md:mx-5 justify-center lg:order-1">
+          <h1 class="card-title font-bold md:text-3xl xl:text-4xl">
+            Troubleshooting Website
+          </h1>
+          <span class="text-[.7rem] leading md:text-[1rem] lg:text-base">
+            <p>
+              <span class="font-semibold">Tech:</span> Angular, Angular
+              Material, Bootstrap, SCSS
+            </p>
+            <p>
+              <span class="font-semibold">Deployment:</span> Amazon S3,
+              Cloudfront
+            </p>
+            <p>
+              <span class="font-semibold">Integrations:</span> Google Maps,
+              Google Captcha
+            </p>
+          </span>
+          <span class="pt-5">
+            <p class="md:text-lg">
+              Static troubleshooting website for a telecommunications company in
+              the caribbean. Allows customers to browse through troubleshooting
+              tips for a variety of commonly encounterd issues re TV, Internet,
+              Voice & Mobile. Site also contains an outage map showing outage
+              duration & GPS coordinates for each.
+            </p>
+          </span>
+
+          <span class="pt-5 flex gap-3 items-end">
+            <div class="flex">
+              <img class="h-8 md:h-10" src="../../assets/github.svg" />
+            </div>
+
+            <div class="flex">
+              <a
+                href="https://troubleshooting.ezsolutionz.xyz/"
+                target="_blank"
+                class="flex items-center text-white"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="h-auto ml-1 !w-8 md:!w-10"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-5m-7 1L20 4m-5 0h5v5"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <div
+        class="card relative grid lg:grid-cols-2 overflow-hidden card-compact m-auto items-center h-full w-[85%] rounded-[40px] border-[1px] border-t-0 shadow-[7px_7px_0px_0px] lg:p-8"
+        [ngClass]="{ 'custom-card-background': theme == 'main-theme' }"
+      >
+        <div class="hover:transform hover:pb-5 hover:scale-110 md:m-5">
+          <img
+            id="portfolioArea"
+            appMouseEvents
+            class="h-full w-full"
+            src="../../assets/portfolio.PNG"
+          />
+        </div>
+
+        <div class="card-body h-full pt-10 md:mx-5 justify-center">
+          <h1 class="card-title font-bold md:text-3xl xl:text-4xl">
+            Portfolio Website
+          </h1>
+          <span class="text-[.7rem] leading md:text-[1rem] lg:text-base">
+            <p>
+              <span class="font-semibold">Tech:</span> Angular, Tailwind,
+              DaisyUI, SCSS
+            </p>
+            <p>
+              <span class="font-semibold">Deployment:</span> Amazon S3,
+              Cloudfront
+            </p>
+            <p>
+              <span class="font-semibold">Integrations:</span> Google Captcha
+            </p>
+          </span>
+          <span class="pt-5">
+            <p class="md:text-lg">
+              My personal portfolio showcasing my skills & services offered.
+            </p>
+          </span>
+
+          <span class="pt-5 flex gap-3 items-end">
+            <div class="flex">
+              <img class="h-8 md:h-10" src="../../assets/github.svg" />
+            </div>
+
+            <div class="flex">
+              <a
+                href="https://ezsolutionz.xyz/"
+                target="_blank"
+                class="flex items-center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="h-auto ml-1 !w-8 md:!w-10"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-5m-7 1L20 4m-5 0h5v5"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <div
+        class="card relative grid lg:grid-cols-2 overflow-hidden card-compact m-auto items-center h-full w-[85%] rounded-[40px] border-[1px] border-t-0 shadow-[7px_7px_0px_0px] lg:p-8"
+        [ngClass]="{ 'custom-card-background': theme == 'main-theme' }"
+      >
+        <div
+          class="hover:transform hover:pb-5 hover:scale-110 md:m-5 lg:order-2"
+        >
+          <img class="h-full w-full" src="../../assets/portfolioapi.PNG" />
+        </div>
+
+        <div class="card-body h-full pt-10 md:mx-5 justify-center lg:order-1">
+          <h1 class="card-title font-bold md:text-3xl xl:text-4xl">
+            C# Web API
+          </h1>
+          <span class="text-[.7rem] leading md:text-[1rem] lg:text-base">
+            <p><span class="font-semibold">Tech:</span> C#, .NetCore</p>
+            <p>
+              <span class="font-semibold">Deployment:</span> Azure DB (SQL),
+              Azure App Service
+            </p>
+            <p>
+              <span class="font-semibold">Integrations:</span> Google Captcha,
+              Sendgrid, Azure Key Vault
+            </p>
+          </span>
+          <span class="pt-5">
+            <p class="md:text-lg">
+              Contains endpoints for the troubleshooting, portfolio & logistics
+              website
+            </p>
+          </span>
+
+          <span class="pt-5 flex gap-3 items-end">
+            <div class="flex">
+              <img class="h-8 md:h-10" src="../../assets/github.svg" />
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

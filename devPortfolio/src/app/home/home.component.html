@@ -1,0 +1,71 @@
+<div
+  [attr.data-theme]="theme"
+  class="section inset-0 w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:6rem_4rem]"
+  id="Home"
+>
+  <div
+    class="items-center text-center lg:text-left lg:flex min-h-screen z-10 m:p-14"
+  >
+    <div class="dotlottie-player flex justify-center lg:justify-end pb-5">
+      <dotlottie-player
+        mode="normal"
+        class="w-[25rem] lg:w-[30rem] xl:w-[40rem] 2xl:w-[50rem]"
+        src="assets/hero_software.lottie"
+        autoplay
+        loop
+      />
+    </div>
+    <div class="md:mx-14 pb-10 items-center">
+      <h1
+        class="text-4xl xl:text-6xl font-bold animate__animated animate__fadeInDown"
+      >
+        Transforming Ideas Into Cutting Edge Solutions.
+      </h1>
+      <span class="mr-5">
+        <p
+          class="py-5 mx-6 md:mx-0 text-base md:text-lg font-medium tracking-wide animate__animated animate__fadeInDown animate__delay-1s"
+        >
+          Experienced full stack developer specializing in web applications.
+          Explore my portfolio showcasing expertise in Angular, C#, system
+          design & other web technologies.
+        </p>
+      </span>
+
+      <div class="flex justify-center gap-3 lg:justify-start md:gap-5">
+        <div class="flex">
+          <a
+            href="assets/David Donaldson Resume.pdf"
+            target="_blank"
+            class="custom-btn flex items-center text-primary border-primary border-2 hover:bg-primary hover:text-white transition ease-in-out duration-500"
+            >Resume<svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="h-auto ml-1 md:!w-6"
+            >
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-5m-7 1L20 4m-5 0h5v5"
+              ></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="flex">
+          <a
+            href="mailto:david.donaldson1991@gmail.com"
+            target="_blank"
+            class="custom-btn flex items-center text-white border-primary bg-primary border-2 hover:bg-white hover:text-primary transition ease-in-out duration-500"
+            >Let's Talk
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

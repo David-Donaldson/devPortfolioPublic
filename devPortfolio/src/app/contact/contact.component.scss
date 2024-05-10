@@ -1,0 +1,23 @@
+.custom-text {
+  @apply text-primary;
+}
+
+.textareaInput {
+  @apply w-full px-4 py-3 border-2 placeholder:text-gray-500 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100;
+}
+
+.singleInput {
+  @apply w-full px-4 py-3 border-2 placeholder:text-gray-500 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100;
+}
+
+.input-error {
+  @apply text-red-600 text-sm;
+}
+
+.input-label {
+  @apply block text-sm font-semibold mb-2;
+}
+
+.input-error-outline {
+  @apply border border-red-500;
+}

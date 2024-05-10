@@ -1,0 +1,11 @@
+.custom-background {
+  @apply bg-[rgb(244,244,244)] bg-[linear-gradient(149deg,_rgba(244,244,244,1)_0%,_rgba(148,181,192,1)_45%)];
+}
+
+.custom-card-background {
+  @apply bg-primary border-primary shadow-[7px_7px_0px_0px_rgba(204,230,223)] text-white;
+}
+
+.custom-text {
+  @apply text-primary;
+}
