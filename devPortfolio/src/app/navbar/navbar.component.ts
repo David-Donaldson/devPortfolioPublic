@@ -20,7 +20,9 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   theme: any;
   themeManager$ = inject(Observables);
   ngOnInit(): void {
-    this.theme = this.themeManager$.themeManager.value;
+    this.themeManager$.themeManager.subscribe((val) => {
+      this.theme = val;
+    });
   }
   isChecked: boolean = false;
   //@Output() emittedTheme = new EventEmitter<string>();
